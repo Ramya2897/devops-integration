@@ -6,7 +6,7 @@ FROM openjdk:17-jdk-alpine
 
 EXPOSE 9297
  
-ADD target/devops-integration-0.0.1-SNAPSHOT.jar devops-integration-0.0.1-SNAPSHOT.jar
+ADD target/devops-integration.jar devops-integration.jar
 
 # java -jar /opt/app/app.jar
-ENTRYPOINT ["java","-jar","/devops-integration-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/devops-integration.jar"]
